@@ -18,8 +18,8 @@ const MostrarAcudit= _ =>{
     
     return (
     <div>
-       {joke}  
-       <Stylebutton onClick={() => nouAcudit()}>Següent Acudit</Stylebutton> 
+        {joke}
+        <Stylebutton onClick={() => nouAcudit()}>Següent Acudit</Stylebutton>       
     </div>
    ) 
     

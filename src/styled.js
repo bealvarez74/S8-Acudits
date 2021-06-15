@@ -18,7 +18,8 @@ body{
 
 export const Stylediv = styled.div`
     margin: 1.2rem;
-    min-height: 300px;
+    width:300px;
+    height: 350px;
     background-color:white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius:10px;
@@ -42,4 +43,28 @@ export const Stylebutton = styled.button`
         background-color:grey;
         cursor:pointer;
     }
+`;
+export const Styletemps = styled.div`
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:100px;
+    height:40px;
+    background-color:red;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    color:white;
+`;
+
+export const Stylewelcome = styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+     }
 `;

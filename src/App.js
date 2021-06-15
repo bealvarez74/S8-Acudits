@@ -1,14 +1,14 @@
 import React from 'react';
-import HeaderAcudit from './Componentes/header';
-import MostrarAcudit from './Componentes/mostraracudit';
-import {Stylediv} from'./styled';
+import ScreenAcudit from './componentes/screenacudit';
+import ScreenWelcome from './componentes/welcome';
+
 
 function App() {
-  return (   
-      <Stylediv>
-          <HeaderAcudit></HeaderAcudit>
-          <MostrarAcudit></MostrarAcudit>      
-      </Stylediv>
+   const screen=true;
+   return (
+            <div>
+              {screen ? <ScreenWelcome/> :<ScreenAcudit/> }    
+           </div> 
   );
 }
 
