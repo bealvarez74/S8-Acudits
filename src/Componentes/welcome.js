@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
-import ScreenAcudit from './screenacudit';
+import React from 'react';
 import {Stylewelcome, Stylebutton} from'../styled';
+import { Link } from 'react-router-dom';
 
 function ScreenWelcome() {
-    const[screenWelcome,setScreenWelcome ]=useState(true);
+    
     return (
-            <div>
-                {screenWelcome?
+            <div>   
                <Stylewelcome><h1>Welcome!!</h1>
-               <Stylebutton onClick={()=>setScreenWelcome(false)}>Accedeix</Stylebutton> 
-               </Stylewelcome>:<ScreenAcudit/>}
+                  <Stylebutton><Link to ="/screenacudit">Accedeix</Link></Stylebutton> 
+               </Stylewelcome>
             </div>  
          );
  }

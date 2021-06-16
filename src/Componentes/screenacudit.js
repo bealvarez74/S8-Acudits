@@ -4,7 +4,7 @@ import MostrarAcudit from './mostraracudit';
 import MostrarTemps from './mostrartemps';
 import {Stylediv} from'../styled';
 
-function ScreenAcudit() {
+const ScreenAcudit= _ =>{
   
     return (
              <div>
